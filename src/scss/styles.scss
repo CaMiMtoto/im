@@ -39,7 +39,7 @@
   }
 
   .text-md-white {
-    color: white !important;
+    color: #d3d6de !important;
   }
 
   .text-md-muted {
@@ -69,4 +69,8 @@
   background: #FFFFFF 0 0 no-repeat padding-box !important;
   box-shadow: 0 6px 20px #6E6E6E33 !important;
   border-radius: 68px !important;
+}
+
+.form-check-input:focus {
+  box-shadow: none !important;
 }
