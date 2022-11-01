@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,600;1,800&display=swap');
+// Import all of Bootstrap's CSS
+@import "variables";
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+
+.login-bg {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+}
+
+@media (min-width: 992px) {
+
+  .login-bg {
+    background-image: url('../images/login/login_bg.png');
+  }
+
+  .text-md-white {
+    color: white !important;
+  }
+
+  .text-md-muted {
+    color: #6c757d !important;
+  }
+}
+
+.rounded-lg {
+  border-radius: 25px !important;
+}
+
+.text-xs {
+  font-size: 0.7rem !important;
+}
+
+.w-60 {
+  width: 60% !important;
+}
+
+.feature-icon {
+  height: 2.5rem !important;
+}
+
+.login-form-control {
+  background: #FFFFFF 0 0 no-repeat padding-box !important;
+  box-shadow: 0 6px 20px #6E6E6E33 !important;
+  border-radius: 68px !important;
+}
