@@ -10774,12 +10774,32 @@ textarea.form-control-lg {
 }
 .login-bg {
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: 140% 30% !important;
+  background-image: url("../images/login/login_bg.png");
 }
 
+.w-6 {
+  width: 2rem;
+}
+
+.h-6 {
+  height: 2rem;
+}
+
+.login-card {
+  border: none;
+  background-color: transparent;
+}
+
+@media (min-width: 768px) {
+  .login-card {
+    border: 1px solid silver;
+    background-color: white;
+  }
+}
 @media (min-width: 992px) {
   .login-bg {
-    background-image: url("../images/login/login_bg.png");
+    background-size: 100% 100% !important;
   }
   .text-md-white {
     color: white !important;
