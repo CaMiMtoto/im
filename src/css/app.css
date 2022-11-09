@@ -10780,7 +10780,7 @@ textarea.form-control-lg {
 
 .otp-bg {
   background-repeat: no-repeat;
-  background-size: 140% 30% !important;
+  background-size: cover !important;
   background-image: url("../images/otp/otp_bg.png");
 }
 
