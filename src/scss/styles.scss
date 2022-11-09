@@ -10,16 +10,26 @@
   background-image: url('../images/login/login_bg.png');
 
 }
+.otp-bg {
+  background-repeat: no-repeat;
+  background-size: cover !important;
+  background-image: url('../images/otp/otp_bg.png');
 
+}
 .w-6 {
   width: 2rem;
 }
+
 
 .h-6 {
   height: 2rem;
 }
 
 .login-card {
+  border: none;
+  background-color: transparent;
+}
+.otp-card {
   border: none;
   background-color: transparent;
 }
@@ -31,11 +41,16 @@
   }
 }
 
+
 @media (min-width: 992px) {
 
   .login-bg {
     background-size: 100% 100% !important;
     //background-image: url('../images/login/login_bg.png');
+  }
+  .otp-bg {
+    background-size: 100% 100% !important;
+    background-image: url('../images/otp/otp_bg.png');
   }
 
   .text-md-white {
