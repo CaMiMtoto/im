@@ -10,21 +10,34 @@
   background-image: url('../images/login/login_bg.png');
 
 }
+
 .otp-bg {
   background-repeat: no-repeat;
   background-size: cover !important;
   background-image: url('../images/otp/otp_bg.png');
 
 }
+
 .w-6 {
   width: 2rem;
 }
-.dash{
-  border: 0 none;
-  border-top: 2px dashed #FFFFFF;
-  background: none;
-  height:0;
+
+.w-4 {
+  width: 1rem !important;
 }
+
+.h-4 {
+  height: 1rem !important;
+}
+
+.w-5 {
+  width: 1.25rem !important;
+}
+
+.h-5 {
+  height: 1.25rem !important;
+}
+
 
 .h-6 {
   height: 2rem;
@@ -34,6 +47,7 @@
   border: none;
   background-color: transparent;
 }
+
 .otp-card {
   border: none;
   background-color: transparent;
@@ -53,10 +67,7 @@
     background-size: 100% 100% !important;
     //background-image: url('../images/login/login_bg.png');
   }
-  .otp-bg {
-    background-size: 100% 100% !important;
-    background-image: url('../images/otp/otp_bg.png');
-  }
+
 
   .text-md-white {
     color: #d3d6de !important;
@@ -94,3 +105,61 @@
 .form-check-input:focus {
   box-shadow: none !important;
 }
+
+.w-1 {
+  width: 1rem !important;
+}
+
+.h-1 {
+  height: 1rem !important;
+}
+
+.gap-5 {
+  gap: 3rem !important;
+}
+
+$gaps: 6, 7, 8, 9, 10, 11, 12, 13, 14, 15;
+
+$screens: sm, md, lg, xl, xxl;
+
+@each $gap in $gaps {
+  .gap-#{$gap} {
+    gap: #{$gap}rem !important;
+  }
+}
+
+
+$widths: 10, 20, 30, 40, 60, 50, 70, 80, 90, 100;
+@each $w in $widths {
+  .w-#{$w} {
+    width: percentage($w/100) !important;
+  }
+}
+
+@each $screen in $screens {
+  @include media-breakpoint-up($screen) {
+    @each $gap in $gaps {
+      .gap-#{$screen}-#{$gap} {
+        gap: #{$gap}rem !important;
+      }
+    }
+    @each $w in $widths {
+      .w-#{$screen}-#{$w} {
+        width: percentage($w/100) !important;
+      }
+    }
+
+  }
+}
+
+
+.dotted-line {
+  border-bottom: 2px dashed white;
+  width: 10%;
+  z-index: 1;
+}
+
+.z-index-2 {
+  z-index: 2 !important;
+}
+
