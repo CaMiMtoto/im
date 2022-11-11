@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Security Tips</title>
+    <link rel="icon" href="../images/otp/logo.svg" type="image/icon type">
+    <link rel="stylesheet" href="../css/app.css">
+</head>
+<body>
+<div class="min-vh-100 d-flex flex-column justify-content-between">
+    <div>
+        <nav class="navbar navbar-expand-md  navbar-light "
+             style="background-image: url(../images/security/top_bg.png);background-size: cover;background-repeat: no-repeat">
+            <div class="container">
+                <a class="navbar-brand d-flex flex-column" href="../index.html">
+                    <img src="../images/otp/logo.svg" alt="logo" style="height: 3rem">
+                </a>
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <!--                <span class="navbar-toggler-icon"></span>-->
+
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                         stroke="currentColor" class="w-6 h-6 text-white">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
+                    </svg>
+
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-2">
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center gap-1 text-info text-md-white fw-bold"
+                               aria-current="page"
+                               href="../index.html">
+                                <img src="../images/otp/headphone.svg" alt="">
+                                SUPPORT
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center gap-1 text-info text-md-white fw-bold"
+                               aria-current="page"
+                               href="">
+                                <img src="../images/otp/security.svg" alt="">
+                                SECURITY TIPS
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center gap-1 text-info text-md-white fw-bold"
+                               aria-current="page"
+                               href="#">
+                                <img src="../images/otp/question.svg" alt="">
+                                FAQs
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center gap-1 text-info text-md-white fw-bold"
+                               aria-current="page"
+                               href="#">
+                                <img src="../images/otp/lang.svg" alt="">
+                                EN
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-md-6 my-3">
+                    <h4 class="text-primary  fs-4">
+                        To Onboard, please choose an option that best fits you from the list below:
+                    </h4>
+                    <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist"
+                         aria-orientation="vertical">
+                        <div class="nav-link active d-flex rounded-4 shadow  align-items-center my-2 p-3 onboard-item "
+                             id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button"
+                             role="tab" aria-controls="v-pills-home" aria-selected="true">
+
+                            <img src="../images/onboard/phone1.png" class="img-fluid d-none d-lg-block"
+                                 style="height: 4rem" alt=""/>
+                            <div class="flex-grow-1">
+                                <div class="d-flex justify-content-between">
+                                    <h5 class="text-info onboard-heading">
+                                        Use Existing digital Channels <br> (mobile application) to
+                                        onboard
+                                    </h5>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                         stroke-width="1.5" stroke="currentColor" class="w-6 h-6 d-none d-lg-block">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                              d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"/>
+                                    </svg>
+                                </div>
+                                <p class="small fw-light">Onboard easily and faster Using I&M mobile application <br>
+                                    credentials.</p>
+                            </div>
+                        </div>
+
+                        <div class="nav-link text-decoration-none d-flex rounded-4  align-items-center my-2 p-3 onboard-item shadow"
+                             id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages"
+                             type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">
+                            <img src="../images/onboard/home.png" class="img-fluid d-none d-lg-block" style="" alt=""/>
+                            <div class="flex-grow-1">
+                                <div class="d-flex justify-content-between">
+                                    <h5 class="text-info onboard-heading">Use I&M Account number&<br> ID Number to
+                                        onboard</h5>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                         stroke-width="1.5" stroke="currentColor"
+                                         class="w-6 h-6 text-muted d-none d-lg-block">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                              d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"/>
+                                    </svg>
+                                </div>
+                                <p class="small fw-normal">Onboard easily and faster Using I&M Account
+                                    number & <br>
+                                    ID Number</p>
+                            </div>
+                        </div>
+                        <div class="nav-link text-decoration-none d-flex rounded-4  align-items-center my-2 p-3 onboard-item shadow"
+                             id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings"
+                             type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                            <img src="../images/onboard/atm.png" class="img-fluid d-none d-lg-block" style="" alt=""/>
+                            <div class="flex-grow-1">
+                                <div class="d-flex justify-content-between">
+                                    <h5 class="text-info onboard-heading">Use ATM Card to Onboard</h5>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                         stroke-width="1.5" stroke="currentColor"
+                                         class="w-6 h-6 text-muted d-none d-lg-block">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                              d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"/>
+                                    </svg>
+                                </div>
+                                <p class="small fw-normal ">Onboard easily and faster Using I&M ATM Card
+                                    credentials.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 my-3">
+                    <div class="d-flex justify-content-center align-items-start gap-2 position-relative">
+                        <div class="d-flex flex-column justify-content-center align-items-center">
+                            <div class="border border-2 text-primary border-primary rounded-circle h-6 w-6 d-flex justify-content-center align-items-center fw-bold">
+                                1
+                            </div>
+                            <span class="text-xxs text-primary fw-bold text-center">
+                                Enter Mobile <br> Banking credentials
+                            </span>
+                        </div>
+                        <div class="text-extra-secondary mt-3"
+                             style="border-bottom: 2px dotted;width: 40px ;"></div>
+                        <div class="d-flex flex-column justify-content-center align-items-center">
+                            <div class="border border-2 text-extra-secondary border-extra-secondary rounded-circle h-6 w-6 d-flex justify-content-center align-items-center fw-bold">
+                                2
+                            </div>
+                            <span class="text-xxs text-extra-secondary fw-bold text-center">
+                             Confirm <br> OTP
+                            </span>
+                        </div>
+                        <div class="text-extra-secondary mt-3"
+                             style="border-bottom: 2px dotted;width: 40px ;"></div>
+                        <div class="d-flex flex-column justify-content-center align-items-center">
+                            <div class="border border-2 text-extra-secondary border-extra-secondary rounded-circle h-6 w-6 d-flex justify-content-center align-items-center fw-bold">
+                                3
+                            </div>
+                            <span class="text-xxs text-extra-secondary fw-bold text-center">
+                              Choose Security <br> Questions
+                            </span>
+                        </div>
+                        <div class="text-extra-secondary mt-3"
+                             style="border-bottom: 2px dotted;width: 40px ;"></div>
+                        <div class="d-flex flex-column justify-content-center align-items-center">
+                            <div class="border border-2 text-extra-secondary border-extra-secondary rounded-circle h-6 w-6 d-flex justify-content-center align-items-center fw-bold">
+                                4
+                            </div>
+                            <span class="text-xxs  text-extra-secondary fw-bold text-center">
+                            Set <br> Password
+                            </span>
+                        </div>
+                        <div class="text-extra-secondary mt-3"
+                             style="border-bottom: 2px dotted;width: 40px ;"></div>
+                        <div class="d-flex flex-column justify-content-center align-items-center">
+                            <div class="border border-2 text-extra-secondary border-extra-secondary rounded-circle h-6 w-6 d-flex justify-content-center align-items-center fw-bold">
+                                5
+                            </div>
+                            <span class="text-xxs text-extra-secondary fw-bold text-center">
+                              Log in<br>To finish
+                            </span>
+                        </div>
+                    </div>
+                    <div class="tab-content py-3" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                             aria-labelledby="v-pills-home-tab" tabindex="0">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-10 col-xx-9">
+                                    <div class="card shadow-sm rounded-4  overflow-hidden">
+                                        <div class="card-header bg-primary d-flex align-items-center ">
+                                            <img src="../images/onboard/phone1.png" class="h-6" alt=""
+                                                 style="height: 3rem;"/>
+                                            <h6 class="text-white">Enter your mobile banking <br> credentials to
+                                                onboard: </h6>
+                                        </div>
+                                        <div class="card-body">
+                                            <form action="" id="submitForm">
+                                                <div class="mb-3 position-relative">
+                                                    <label for="exampleFormControlInput1"
+                                                           class="form-label text-primary fw-bold">Username:</label>
+                                                    <input type="email" class="form-control rounded-pill" required
+                                                           id="exampleFormControlInput1"
+                                                           placeholder="Username"/>
+                                                    <img
+                                                            src="../images/login/keyboard.svg"
+                                                            alt="Keyboard"
+                                                            class="position-absolute"
+                                                            style="right: 1rem; top: 2.7rem"
+                                                    />
+                                                </div>
+
+                                                <div class="mb-3 position-relative">
+                                                    <label for="password"
+                                                           class="form-label text-primary fw-bold">Password/PIN:</label>
+                                                    <input type="password" class="form-control rounded-pill"
+                                                           id="password" required
+                                                           placeholder="Password"/>
+                                                    <div
+                                                            style="right: 1rem; top: 2.7rem"
+                                                            class="position-absolute d-flex align-items-center justify-content-center">
+                                                        <img
+                                                                src="../images/login/keyboard.svg"
+                                                                class="me-2"
+                                                                alt="Keyboard"
+                                                        />
+                                                        <img src="../images/login/eye.svg" alt="Eye"/>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-check mb-3">
+                                                    <input class="form-check-input rounded-0" type="checkbox" value=""
+                                                           id="virtual_keyboard">
+                                                    <label class="form-check-label text-primary fw-light small"
+                                                           for="virtual_keyboard">
+                                                        Enable virtual keyboard
+                                                    </label>
+                                                </div>
+
+                                                <button type="submit"
+                                                        class="btn  btn-info rounded-pill text-white px-5">
+                                                    Verify
+
+                                                    <span id="loader" class="hide">
+                                                        <span class="spinner-border spinner-border-sm" role="status">
+                                                        <span class="visually-hidden">Loading...</span>
+                                                    </span>
+                                                    </span>
+                                                </button>
+
+                                            </form>
+
+                                            <div class="alert alert-success d-flex mt-3 flex-column hide" id="results"
+                                                 role="alert">
+                                                <div>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                         viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                                         class="w-6 h-6">
+                                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                                              d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                                    </svg>
+
+                                                    You are welcome onboard
+                                                </div>
+                                                <hr class="my-1">
+                                                <div class="row">
+                                                    <label for="staticEmail" class="col-sm-5 fw-bold col-form-label">Full
+                                                        Name:</label>
+                                                    <div class="col-sm-7">
+                                                        <input type="text" readonly class="form-control-plaintext"
+                                                               id="staticEmail" value="Peter Musoni">
+                                                    </div>
+                                                </div>
+                                                <hr class="my-1">
+                                                <div class=" row">
+                                                    <label for="phone_number" class="col-sm-5 fw-bold col-form-label">Phone
+                                                        Number:</label>
+                                                    <div class="col-sm-7">
+                                                        <input type="text" readonly class="form-control-plaintext"
+                                                               id="phone_number" value="0788 890 342">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="d-flex flex-column gap-2 mt-3 flex-md-row justify-content-between align-items-center" id="myDiv">
+                                                <div class="form-check">
+                                                    <input class="form-check-input rounded-0" type="checkbox" value=""
+                                                           id="terms_conditions">
+                                                    <label class="form-check-label text-primary fw-light small"
+                                                           for="terms_conditions">
+                                                        I accept the <a href="" class="fw-normal">terms and
+                                                        conditions</a>
+                                                    </label>
+                                                </div>
+                                                <button class="btn  btn-primary rounded-pill px-5 hide"
+                                                        id="continue">
+                                                    Continue
+                                                </button>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
+                             aria-labelledby="v-pills-messages-tab" tabindex="0">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, cumque delectus
+                                distinctio dolorem dolorum eaque error esse, fugiat illo, molestiae mollitia non
+                                praesentium quae quia reprehenderit ullam unde veniam voluptate!
+                            </p>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
+                             aria-labelledby="v-pills-settings-tab" tabindex="0">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab commodi eveniet excepturi
+                                facilis modi provident quo quos sunt ut, voluptatum. Autem dicta dolor facere saepe
+                                voluptates? Ex molestiae perferendis rem!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container my-3">
+        <div class="row">
+            <div class="col">
+                <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+                    <div class="d-flex flex-wrap gap-2 align-items-center text-primary">
+                        <img src="../images/onboard/call_big.png" alt="Call" class="img-fluid h-6"/>
+                        <div class="me-5">
+                            <strong class="text-xs ">24Hour Call Centre:</strong> <br>
+                            <span class="text-w">+250 788 162 006</span>
+                        </div>
+
+                        <p class="text-xs mb-0">
+                            To find out more about our products, <br> visit any I&M Bank Branch or email <a
+                                href="mailto:info@imbank.co.rw"
+                                class="">info@imbank.co.rw</a>
+                        </p>
+                    </div>
+                    <img src="../images/otp/blue_dot.svg" class="img-fluid" alt="chat bubble"/>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.slim.js"
+        integrity="sha512-1cF8XUz5U3BlnRVqNFn+aPNwwSr/FPtrmKvM1g4dJJ9tg8kmqRUzqbSOvRRAMScDnTkOcOnnfwF3+jRA/nE2Ow=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+    $(function () {
+        $('#submitForm').on('submit', function (e) {
+            e.preventDefault();
+            let form = $(this);
+            let btn = form.find(':submit');
+            btn.prop('disabled', true);
+            let loader = $('#loader');
+            loader.removeClass('hide');
+            let continueBtn = $('#continue');
+            continueBtn.addClass('hide');
+
+            // simulate ajax request
+            setTimeout(function () {
+                let results = $('#results');
+                results.removeClass('hide');
+                btn.prop('disabled', false);
+                loader.addClass('hide');
+                continueBtn.removeClass('hide');
+
+                let scrollDiv = document.getElementById("myDiv").offsetTop;
+                window.scrollTo({ top: scrollDiv, behavior: 'smooth'});
+            }, 3000);
+
+        });
+    })
+</script>
+</body>
+</html>
