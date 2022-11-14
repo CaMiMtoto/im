@@ -5,6 +5,7 @@
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
 
+$color-extra-primary: #C6CAD8;
 .login-bg {
   background-repeat: no-repeat;
   background-size: 140% 30% !important;
@@ -200,11 +201,11 @@ $widths: 10, 20, 30, 40, 60, 50, 70, 80, 90, 100;
 }
 
 .text-extra-secondary {
-  color: #C6CAD8 !important;
+  color: $color-extra-primary !important;
 }
 
 .border-extra-secondary {
-  border-color: #C6CAD8 !important;
+  border-color: $color-extra-primary !important;
 }
 
 .onboard-item {
