@@ -73,13 +73,12 @@
                     <h4 class="text-primary  fs-5">
                         To Onboard, please choose an option that best fits you from the list below:
                     </h4>
-                    <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist"
-                         aria-orientation="vertical">
+                    <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist">
                         <div class="nav-link active d-flex rounded-4 shadow  align-items-center my-2 p-3 onboard-item "
                              id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button"
                              role="tab" aria-controls="v-pills-home" aria-selected="true">
 
-                            <img src="../images/onboard/phone1.png" class="img-fluid d-none d-lg-block"
+                            <img src="../images/onboard/phone_1.svg" class="img-fluid d-none d-lg-block"
                                  style="height: 4rem" alt=""/>
                             <div class="flex-grow-1">
                                 <div class="d-flex justify-content-between">
@@ -93,15 +92,15 @@
                                               d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"/>
                                     </svg>
                                 </div>
-                                <p class="text-xs fw-normal">Onboard easily and faster Using I&M mobile application <br>
+                                <p class="text-xs fw-normal">
+                                    Onboard easily and faster Using I&M mobile application <br>
                                     credentials.</p>
                             </div>
                         </div>
-
                         <div class="nav-link text-decoration-none d-flex rounded-4  align-items-center my-2 p-3 onboard-item shadow"
                              id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages"
                              type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">
-                            <img src="../images/onboard/home.png" class="img-fluid d-none d-lg-block" style="" alt=""/>
+                            <img src="../images/onboard/home.svg" class="img-fluid d-none d-lg-block" style="" alt=""/>
                             <div class="flex-grow-1">
                                 <div class="d-flex justify-content-between">
                                     <h6 class="text-info onboard-heading">Use I&M Account number&<br> ID Number to
@@ -121,7 +120,7 @@
                         <div class="nav-link text-decoration-none d-flex rounded-4  align-items-center my-2 p-3 onboard-item shadow"
                              id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings"
                              type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
-                            <img src="../images/onboard/atm.png" class="img-fluid d-none d-lg-block" style="" alt=""/>
+                            <img src="../images/onboard/atm.svg" class="img-fluid d-none d-lg-block" style="" alt=""/>
                             <div class="flex-grow-1">
                                 <div class="d-flex justify-content-between">
                                     <h6 class="text-info onboard-heading">Use ATM Card to Onboard</h6>
@@ -289,8 +288,7 @@
                                                 </div>
                                             </div>
 
-                                            <div class="d-flex flex-column gap-2 mt-3 flex-md-row justify-content-between align-items-center"
-                                                 id="myDiv">
+                                            <div class="d-flex flex-column gap-2 mt-3 flex-md-row justify-content-between align-items-center">
                                                 <div class="form-check">
                                                     <input class="form-check-input rounded-0" type="checkbox" value=""
                                                            id="terms_conditions">
@@ -300,7 +298,7 @@
                                                         conditions</a>
                                                     </label>
                                                 </div>
-                                                <a href="confirm_otp.html"
+                                                <a href="confirm_otp.html?tab=digital"
                                                    class="btn  btn-primary rounded-pill px-5 hide"
                                                    id="continue">
                                                     Continue
@@ -323,14 +321,16 @@
                                         <div class="card-header bg-primary d-flex align-items-center ">
                                             <img src="../images/onboard/phone1.png" class="h-6" alt=""
                                                  style="height: 3rem;"/>
-                                            <h6 class="text-white">Enter your I&M Account number & <br> ID Number to
+                                            <h6 class="text-white">
+                                                Enter your I&M Account number & <br> ID Number to
                                                 onboard: </h6>
                                         </div>
                                         <div class="card-body">
                                             <form action="" id="submitForm2">
                                                 <div class="mb-3 position-relative">
                                                     <label for="exampleFormControlInput1"
-                                                           class="form-label text-primary fw-bold">Account Number:</label>
+                                                           class="form-label text-primary fw-bold">Account
+                                                        Number:</label>
                                                     <input type="text" class="form-control rounded-pill" required
                                                            id="exampleFormControlInput2"
                                                            placeholder="Account Number" minlength="11"/>
@@ -400,9 +400,9 @@
                                                 </div>
                                             </div>
 
-                                            <div class="d-flex flex-column gap-2 mt-3 flex-md-row justify-content-end align-items-center" id="myDiv2">
+                                            <div class="d-flex flex-column gap-2 mt-3 flex-md-row justify-content-end align-items-center ">
 
-                                                <a href="confirm_otp.html"
+                                                <a href="confirm_otp.html?tab=account"
                                                    class="btn  btn-primary rounded-pill px-5 hide"
                                                    id="continue2">
                                                     Continue
@@ -423,14 +423,15 @@
                                         <div class="card-header bg-primary d-flex align-items-center ">
                                             <img src="../images/onboard/phone1.png" class="h-6" alt=""
                                                  style="height: 3rem;"/>
-                                            <h6 class="text-white">Use ATM Card  to
+                                            <h6 class="text-white">Use ATM Card to
                                                 onboard: </h6>
                                         </div>
                                         <div class="card-body">
                                             <form action="" id="submitForm3">
                                                 <div class="mb-3 position-relative">
                                                     <label for="cardNumber"
-                                                           class="form-label text-primary fw-bold">ATM Card Number:</label>
+                                                           class="form-label text-primary fw-bold">ATM Card
+                                                        Number:</label>
                                                     <input type="text" class="form-control rounded-pill" required
                                                            id="cardNumber"
                                                            placeholder="Card Number" minlength="16" maxlength="16"/>
@@ -440,13 +441,17 @@
                                                 <div class="row mb-3">
                                                     <div class="col-md-6">
                                                         <label for="expDate"
-                                                               class="form-label text-primary fw-bold">Expiry Date:</label>
-                                                        <input type="text" class="form-control rounded-pill" id="input4" placeholder="MM/YY" id="expDate" maxlength="8" minlength="5" required>
+                                                               class="form-label text-primary fw-bold">Expiry
+                                                            Date:</label>
+                                                        <input type="text" class="form-control rounded-pill" id="input4"
+                                                               placeholder="MM/YY" id="expDate" maxlength="8"
+                                                               minlength="5" required>
                                                     </div>
                                                     <div class="col-md-6">
                                                         <label for="cvcNumber"
                                                                class="form-label text-primary fw-bold">CVV:</label>
-                                                        <input type="text" class="form-control rounded-pill" id="cvcNumber" required maxlength="3" minlength="3">
+                                                        <input type="text" class="form-control rounded-pill"
+                                                               id="cvcNumber" required maxlength="3" minlength="3">
                                                     </div>
                                                 </div>
 
@@ -506,9 +511,9 @@
                                                 </div>
                                             </div>
 
-                                            <div class="d-flex flex-column gap-2 mt-3 flex-md-row justify-content-end align-items-center" id="myDiv3">
+                                            <div class="d-flex flex-column gap-2 mt-3 flex-md-row justify-content-end align-items-center ">
 
-                                                <a href="confirm_otp.html"
+                                                <a href="confirm_otp.html?tab=atm"
                                                    class="btn  btn-primary rounded-pill px-5 hide"
                                                    id="continue3">
                                                     Continue
@@ -522,6 +527,7 @@
                             </div>
                         </div>
                     </div>
+                    <div id="scrollDiv" class="h-6"></div>
                 </div>
             </div>
 
@@ -580,7 +586,7 @@
                 loader.addClass('hide');
                 continueBtn.removeClass('hide');
 
-                let scrollDiv = document.getElementById("myDiv,myDiv2,myDiv3").offsetTop;
+                let scrollDiv = document.getElementById("scrollDiv").offsetTop;
                 window.scrollTo({top: scrollDiv, behavior: 'smooth'});
             }, 3000);
 
