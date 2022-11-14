@@ -240,7 +240,7 @@ $widths: 10, 20, 30, 40, 60, 50, 70, 80, 90, 100;
 label.error {
   color: $red !important;
   font-size: 0.7rem !important;
-  font-weight: bold;
+  font-weight: normal !important;
 }
 
 input.error, select.error, textarea.error {
