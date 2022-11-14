@@ -5,6 +5,7 @@
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
 
+$color-extra-primary: #C6CAD8;
 .login-bg {
   background-repeat: no-repeat;
   background-size: 140% 30% !important;
@@ -22,6 +23,7 @@
 .w-6 {
   width: 2rem;
 }
+
 .w-7 {
   width: 3rem;
 }
@@ -46,6 +48,7 @@
 .h-6 {
   height: 2rem;
 }
+
 .h-7 {
   height: 3rem;
 }
@@ -104,7 +107,7 @@
 }
 
 .login-form-control {
-  background: #FFFFFF 0 0 no-repeat padding-box !important;
+  //background: #FFFFFF 0 0 no-repeat padding-box !important;
   box-shadow: 0 6px 20px #6E6E6E33 !important;
   border-radius: 68px !important;
 }
@@ -200,11 +203,11 @@ $widths: 10, 20, 30, 40, 60, 50, 70, 80, 90, 100;
 }
 
 .text-extra-secondary {
-  color: #C6CAD8 !important;
+  color: $color-extra-primary !important;
 }
 
 .border-extra-secondary {
-  border-color: #C6CAD8 !important;
+  border-color: $color-extra-primary !important;
 }
 
 .onboard-item {
@@ -243,7 +246,7 @@ label.error {
   font-weight: normal !important;
 }
 
-input.error, select.error, textarea.error {
+input.error:not(input[type='checkbox']), select.error, textarea.error {
   border-color: $red !important;
   box-shadow: 0 0 0 0.25rem rgb(148 36 36 / 25%) !important;
   padding-right: 4.125rem;
@@ -253,7 +256,7 @@ input.error, select.error, textarea.error {
   background-repeat: no-repeat;
 }
 
-input.valid, select.valid, textarea.valid {
+input.valid:not(input[type='checkbox']), select.valid, textarea.valid {
   border-color: $green !important;
   box-shadow: 0 0 0 0.25rem rgba(36, 148, 92, 0.25) !important;
   padding-right: 4.125rem;

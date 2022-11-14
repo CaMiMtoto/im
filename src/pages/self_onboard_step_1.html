@@ -288,22 +288,32 @@
                                                 </div>
                                             </div>
 
-                                            <div class="d-flex flex-column gap-2 mt-3 flex-md-row justify-content-between align-items-center">
-                                                <div class="form-check">
-                                                    <input class="form-check-input rounded-0" type="checkbox" value=""
-                                                           id="terms_conditions">
-                                                    <label class="form-check-label text-primary fw-light small"
-                                                           for="terms_conditions">
-                                                        I accept the <a href="" class="fw-normal">terms and
-                                                        conditions</a>
-                                                    </label>
+                                            <form action="confirm_otp.html" method="get" id="validateContinueForm">
+                                                <input type="hidden" name="tab" value="digital"/>
+                                                <div class="d-flex flex-column gap-2 mt-3 flex-md-row justify-content-between align-items-center">
+                                                    <div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input rounded-0" type="checkbox"
+                                                                   required name="terms_conditions"
+                                                                   id="terms_conditions">
+                                                            <label class="form-check-label text-primary fw-light small"
+                                                                   for="terms_conditions">
+                                                                I accept the <a target="_blank"
+                                                                                href="https://netbanking.imbank.com/corp/Terms&Condition.pdf"
+                                                                                class="fw-normal">terms and
+                                                                conditions</a>
+                                                            </label>
+                                                        </div>
+                                                        <label id="terms_conditions-error" class="error"
+                                                               for="terms_conditions"></label>
+                                                    </div>
+                                                    <button type="submit"
+                                                            class="btn  btn-primary rounded-pill px-5 hide"
+                                                            id="continue">
+                                                        Continue
+                                                    </button>
                                                 </div>
-                                                <a href="confirm_otp.html?tab=digital"
-                                                   class="btn  btn-primary rounded-pill px-5 hide"
-                                                   id="continue">
-                                                    Continue
-                                                </a>
-                                            </div>
+                                            </form>
 
 
                                         </div>
@@ -567,6 +577,7 @@
 
     $(function () {
         $('form').validate();
+        $('#validateContinueForm').validate();
         $('#submitForm,#submitForm2,#submitForm3').on('submit', function (e) {
             e.preventDefault();
             let form = $(this);
@@ -588,9 +599,13 @@
 
                 let scrollDiv = document.getElementById("scrollDiv").offsetTop;
                 window.scrollTo({top: scrollDiv, behavior: 'smooth'});
-            }, 3000);
+            }, 1000);
 
         });
+
+        /*   $('#validateContinueForm').on('submit', function (e) {
+
+           })*/
     })
 </script>
 </body>

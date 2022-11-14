@@ -98,14 +98,14 @@
                         <span class="text-muted me-3">Security Question</span>
                     </a>
 
-                    <a href=""
-                       class="z-index-2 d-flex  align-items-center border border-2 bg-primary border-white justify-content-between rounded-pill text-decoration-none  gap-3 ">
-                        <div class="rounded-circle bg-info h-6 w-6 d-flex justify-content-center align-items-center text-white tw-text-xs border border-1 border-white">
+                    <a href="javascript:void(0);" style="border-color: #6c757d !important;"
+                       class="z-index-2 d-flex  align-items-center border border-2 bg-primary  justify-content-between rounded-pill text-decoration-none  gap-3 ">
+                        <div class="rounded-circle bg-secondary opacity-25 h-6 w-6 d-flex justify-content-center align-items-center text-extra-secondary tw-text-xs  border-2 border border-extra-secondary">
                             2
                         </div>
-                        <span class="text-white me-3">Change password</span>
+                        <span class="text-muted me-3">Change password</span>
                     </a>
-                    <div class="text-white d-none d-lg-block w-100 position-absolute dotted-line"></div>
+                    <div class="text-white d-none d-lg-block w-100 position-absolute dotted-line opacity-75"></div>
                 </div>
             </div>
             <div class="row pt-xxl-5 mt-3">
@@ -116,10 +116,12 @@
                                 <img src="../images/otp/security_que.svg" class="img-fluid "/>
                             </div>
                             <div class="col-sm-6 ">
-                                <h1 class="text-white mb-4  fw-normal">Choose question that you will easily
-                                    remember in future.</h1>
-                                <h4 class="text-white">Security Questions</h4>
-                                <div class="text-white">
+                                <h3 class="text-white mb-4  fw-normal">
+                                    Choose question that you will easily
+                                    remember in future.
+                                </h3>
+                                <h5 class="text-white">Security Questions</h5>
+                                <div class="text-white opacity-75">
                                     To rest your password in the future,<br>the following questions will
                                     be asked,<br> please answer them consciously
                                 </div>
@@ -130,116 +132,161 @@
                     </div>
                 </div>
                 <div class="col-lg-5  order-0 order-lg-1">
-                    <div class="card card-body rounded-lg  mt-lg-0">
-                        <form action="">
-                            <div class="container">
-                                <div class="row">
-                                        <div class=" col-2 mb-3">
-                                            <div class="rounded-circle mb-3 bg-info col-4 h-6 w-6 d-flex justify-content-center align-items-center text-white tw-text-xs border border-1 border-white">
-                                                <span class="fw-bold ">Q2</span>
-                                            </div>
-                                            <span class="text-primary fw-bold d-none d-md-inline-flex">Answer</span>
+                    <div class="card shadow-sm rounded-4  overflow-hidden">
+                        <div class="card-body py-5 px-4">
+                            <form action="./change_password.html" class="needs-validation" id="submitForm"
+                                  novalidate>
+                                <div>
+                                    <div class="mb-3 row align-items-center">
+                                        <div class="col-2  ">
+                                            <label for="question_1"
+                                                   class="d-flex justify-content-center align-items-center rounded-circle h-6 w-6 bg-info text-white">
+                                                Q1
+                                            </label>
                                         </div>
-                                        <div class=" col-10 mb-2 ">
-                                            <select class="text-primary form-select shadow border-0 rounded-pill  p-2 mb-2 ">
-                                                <option value="">What town was your father born in?</option>
-                                                <option value="">What is the last name of your favorite musician?</option>
-                                                <option value="">What town was your father born in?</option>
-                                                <option value="">What is the lastname  of your childhood friend?</option>
-                                                <option value="">What is the firstname  of your childhood friend?</option>
-                                                <option value="" selected>Who is  your favorite author?</option>
-                                                <option value="">What was your first pet's name?</option>
-                                                <option value="">What is your mothers first name?</option>
-                                                <option value="">where did you spend your honeymoon?</option>
-                                                <option value="">What is your fathers middle name?</option>
-                                                <option value="">Where did you meet your spouse?</option>
-                                                <option value="">What town was your mother born in?</option>
-                                                <option value="">What was your first phone number?</option>
-                                                <option value="">What is your pets name?</option>
-                                                <option value="">What is your school name</option>
+                                        <div class="col-10 position-relative">
+                                            <select class="form-select rounded-pill " required
+                                                    name="question_1"
+                                                    id="question_1">
+                                                <option value="1">What town was your father born in?
+                                                </option>
+                                                <option value="2">What is the last name of your favorite
+                                                    musician?
+                                                </option>
+                                                <option value="3">What town was your father born in?
+                                                </option>
+                                                <option value="4">What is the lastname of your childhood
+                                                    friend?
+                                                </option>
+                                                <option value="5">What is the firstname of your childhood
+                                                    friend?
+                                                </option>
+                                                <option value="6">Who is your favorite author?</option>
+                                                <option value="7">What was your first pet's name?
+                                                </option>
+                                                <option value="56">What is your mothers first name?
+                                                </option>
+                                                <option value="56">where did you spend your honeymoon?
+                                                </option>
+                                                <option value="56">What is your fathers middle name?
+                                                </option>
+                                                <option value="56">Where did you meet your spouse?
+                                                </option>
+                                                <option value="56">What town was your mother born in?
+                                                </option>
+                                                <option value="56">What was your first phone number?
+                                                </option>
+                                                <option value="56">What is your pets name?</option>
+                                                <option value="56">What is your school name</option>
                                             </select>
-                                            <input type="Text" placeholder="Answer"
-                                                   class="login-form-control form-control shadow-sm border border-primary text-xs col-4   pe-5"
-                                            />
-                                        </div>
-                                </div>
-                                <div class="row">
-                                    <div class=" col-2 mb-3">
-                                        <div class="rounded-circle mb-3 bg-info col-4 h-6 w-6 d-flex justify-content-center align-items-center text-white tw-text-xs border border-1 border-white">
-                                            <span class="fw-bold ">Q2</span>
-                                        </div>
-                                        <span class="text-primary fw-bold d-none d-md-inline-flex">Answer</span>
-                                    </div>
-                                    <div class=" col-10 mb-2 ">
-                                        <select class="text-primary form-select shadow border-0 rounded-pill  p-2 mb-2 ">
-                                            <option value="">What town was your father born in?</option>
-                                            <option value="">What is the last name of your favorite musician?</option>
-                                            <option value="">What town was your father born in?</option>
-                                            <option value="">What is the lastname  of your childhood friend?</option>
-                                            <option value="">What is the firstname  of your childhood friend?</option>
-                                            <option value="" selected>Who is  your favorite author?</option>
-                                            <option value="">What was your first pet's name?</option>
-                                            <option value="">What is your mothers first name?</option>
-                                            <option value="">where did you spend your honeymoon?</option>
-                                            <option value="">What is your fathers middle name?</option>
-                                            <option value="">Where did you meet your spouse?</option>
-                                            <option value="">What town was your mother born in?</option>
-                                            <option value="">What was your first phone number?</option>
-                                            <option value="">What is your pets name?</option>
-                                            <option value="">What is your school name</option>
-                                        </select>
-                                        <input type="Text" placeholder="Answer"
-                                               class="login-form-control form-control shadow-sm border border-primary text-xs col-4   pe-5"
-                                        />
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class=" col-2 mb-3">
-                                        <div class="rounded-circle mb-3 bg-info col-4 h-6 w-6 d-flex justify-content-center align-items-center text-white tw-text-xs border border-1 border-white">
-                                            <span class="fw-bold ">Q2</span>
-                                        </div>
-                                        <span class="text-primary fw-bold d-none d-md-inline-flex">Answer</span>
-                                    </div>
-                                    <div class=" col-10 mb-2 ">
-                                        <select class="text-primary form-select shadow border-0 rounded-pill  p-2 mb-2 ">
-                                            <option value="">What town was your father born in?</option>
-                                            <option value="">What is the last name of your favorite musician?</option>
-                                            <option value="">What town was your father born in?</option>
-                                            <option value="">What is the lastname  of your childhood friend?</option>
-                                            <option value="">What is the firstname  of your childhood friend?</option>
-                                            <option value="" selected>Who is  your favorite author?</option>
-                                            <option value="">What was your first pet's name?</option>
-                                            <option value="">What is your mothers first name?</option>
-                                            <option value="">where did you spend your honeymoon?</option>
-                                            <option value="">What is your fathers middle name?</option>
-                                            <option value="">Where did you meet your spouse?</option>
-                                            <option value="">What town was your mother born in?</option>
-                                            <option value="">What was your first phone number?</option>
-                                            <option value="">What is your pets name?</option>
-                                            <option value="">What is your school name</option>
-                                        </select>
-                                        <input type="Text" placeholder="Answer"
-                                               class="login-form-control form-control shadow-sm border border-primary text-xs col-4   pe-5"
-                                        />
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="d-flex align-items-md-center justify-content-center gap-3 mb-4">
-                                        <div class="d-flex flex-column gap-2">
-                                        </div>
-                                        <div class="d-flex align-items-center justify-content-center flex-column gap-2">
-                                            <button class="btn  btn-primary text-white fw-bold px-5 ms-4 w-100 rounded-pill">
-                                                Save and continue
-                                            </button>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </form>
 
 
+                                        </div>
+                                    </div>
+                                    <div class="mb-3 row align-items-center">
+                                        <div class="col-2  ">
+                                            <label for="answer_1" class="text-primary">
+                                                Answer
+                                            </label>
+                                        </div>
+                                        <div class="col-10 position-relative">
+                                            <input class="form-control rounded-pill " required
+                                                   name="answer_1"
+                                                   id="answer_1"/>
+                                        </div>
+                                    </div>
+                                </div>
 
+                                <div>
+                                    <div class="mb-3 row align-items-center">
+                                        <div class="col-2  ">
+                                            <label for="question_2"
+                                                   class="d-flex justify-content-center align-items-center rounded-circle h-6 w-6 bg-info text-white">
+                                                Q2
+                                            </label>
+                                        </div>
+                                        <div class="col-10 position-relative">
+                                            <select class="form-select rounded-pill" required
+                                                    name="question_2"
+                                                    id="question_2">
+                                                <option value=""></option>
+                                                <option value="5">What was your favorite food as a child?
+                                                </option>
+                                                <option value="5">What is your childhood favorite song?
+                                                </option>
+                                                <option value="5">What is your favorite brand of shoes?
+                                                </option>
+                                            </select>
+
+
+                                        </div>
+                                    </div>
+                                    <div class="mb-3 row align-items-center">
+                                        <div class="col-2  ">
+                                            <label for="answer_2" class="text-primary">
+                                                Answer
+                                            </label>
+                                        </div>
+                                        <div class="col-10 position-relative">
+                                            <input class="form-control rounded-pill  " required
+                                                   name="answer_1"
+                                                   id="answer_2"/>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="mb-3 row align-items-center">
+                                        <div class="col-2  ">
+                                            <label for="question_3"
+                                                   class="d-flex justify-content-center align-items-center rounded-circle h-6 w-6 bg-info text-white">
+                                                Q2
+                                            </label>
+                                        </div>
+                                        <div class="col-10 position-relative">
+                                            <select class="form-select rounded-pill" required
+                                                    name="question_3"
+                                                    id="question_3">
+                                                <option value=""></option>
+                                                <option value="89">What was your favorite food as a child?
+                                                </option>
+                                                <option value="89">What is your childhood favorite song?
+                                                </option>
+                                                <option value="89">What is your favorite brand of shoes?
+                                                </option>
+                                            </select>
+
+
+                                        </div>
+                                    </div>
+                                    <div class="mb-3 row align-items-center">
+                                        <div class="col-2  ">
+                                            <label for="answer_3" class="text-primary">
+                                                Answer
+                                            </label>
+                                        </div>
+                                        <div class="col-10 position-relative">
+                                            <input class="form-control rounded-pill" required
+                                                   name="answer_3"
+                                                   id="answer_3"/>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <button type="submit"
+                                        class="btn  btn-primary rounded-pill text-white px-5 w-100">
+                                    Save and continue
+
+                                    <span id="loader" class="hide">
+                                                        <span class="spinner-border spinner-border-sm" role="status">
+                                                        <span class="visually-hidden">Loading...</span>
+                                                    </span>
+                                                    </span>
+                                </button>
+
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -264,7 +311,13 @@
         </div>
     </div>
 </div>
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.slim.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+<script>
+    $(function () {
+        $('form').validate();
+    })
+</script>
 </body>
 </html>
