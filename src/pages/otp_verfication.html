@@ -39,7 +39,7 @@
                     <li class="nav-item">
                         <a class="nav-link d-flex align-items-center gap-1 text-info text-md-white fw-bold"
                            aria-current="page"
-                           href="#">
+                           href="security_tips.html">
                             <img src="../images/otp/security.svg" alt="">
                             SECURITY TIPS
                         </a>
@@ -76,22 +76,53 @@
                     <img src="../images/otp/cartoon2.png" alt="Cartoon" class="img-fluid w-100 d-sm-none"/>
                     <div class="card card-body rounded-lg  px-md-5 py-4 mt-5 ">
                         <h6 class="text-info fw-bold  my-4">OTP verfication</h6>
-                        <form action="change_password.html">
+                        <form action="security_qustions.html" class="was-validated" id="submitForm">
                             <div class="mb-2 position-relative">
-                                <input type="text"
-                                       class="login-form-control form-control shadow border-0  pe-4"
-                                       id="otp">
+                                <input type="text" id="validationPassword"
+                                       class="login-form-control form-control shadow   pe-4"
+                                       required/>
+                                <div class="invalid-feedback">
+                                    Please Enter OTP.
+                                </div>
                             </div>
                             <div class="mb-2 d-flex justify-content-between align-items-center">
                                 <div class="form-check">
-                                    <img src="../images/otp/done.svg" class="w-6 h-6">
-                                    <label class="form-check-label text-primary text-xs fw-bold" for="flexCheckDefault">
-                                        Verification Approved!
-                                    </label>
+                                    <div class="alert alert-success d-flex mt-3 flex-column hide" id="results"
+                                         role="alert">
+                                        <div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                 viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                                 class="w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                      d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                            </svg>
+
+                                            You are welcome onboard
+                                        </div>
+                                        <hr class="my-1">
+                                        <div class="row">
+                                            <label for="staticEmail" class="col-sm-5 fw-bold col-form-label">Full
+                                                Name:</label>
+                                            <div class="col-sm-7">
+                                                <input type="text" readonly class="form-control-plaintext"
+                                                       id="staticEmail" value="Peter Musoni">
+                                            </div>
+                                        </div>
+                                        <hr class="my-1">
+                                        <div class=" row">
+                                            <label for="phone_number" class="col-sm-5 fw-bold col-form-label">Phone
+                                                Number:</label>
+                                            <div class="col-sm-7">
+                                                <input type="text" readonly class="form-control-plaintext"
+                                                       id="phone_number" value="0788 890 342">
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <a href="" class="text-info text-xs">
-                                    Resend code
-                                </a>
+                                <span id="loader" class="hide">
+                                                        <span class="spinner-border border-primary spinner-border-sm" role="status">
+                                                        <span class="visually-hidden">Loading...</span>
+                                                    </span>
                             </div>
                             <div class="mb-2">
                                 <button class="btn  btn-primary text-info fw-bold w-100 rounded-pill">
@@ -116,16 +147,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-6 col-xl-2 col-md-4">
-                        <div class="d-flex flex-column justify-content-start align-items-start">
-                            <img src="../images/otp/bills.svg" alt="Transfer" class="feature-icon"/>
-                            <h6 class="text-white mb-3 fw-bold">Bills</h6>
-                            <p class="text-white text-xs">
-                                Easily access <br> your bills from <br> the platform
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-6 col-xl-2 col-md-5 ">
+                    <div class="col-6 col-xl-3 col-md-6">
                         <div class="d-flex flex-column justify-content-start align-items-start">
                             <img src="../images/otp/mobile_money.svg" alt="Transfer" class="feature-icon"/>
                             <h6 class="text-white mb-3 fw-bold">Mobile Money</h6>
@@ -203,6 +225,33 @@
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    $(function () {
+        $('#submitForm').on('submit', function (e) {
+            e.preventDefault();
+            let form = $(this);
+            let btn = form.find(':submit');
+            btn.prop('disabled', true);
+            let loader = $('#loader');
+            loader.removeClass('hide');
+            let continueBtn = $('#continue');
+            continueBtn.addClass('hide');
+
+            // simulate ajax request
+            setTimeout(function () {
+                let results = $('#results');
+                results.removeClass('hide');
+                btn.prop('disabled', false);
+                loader.addClass('hide');
+                continueBtn.removeClass('hide');
+
+                let scrollDiv = document.getElementById("myDiv").offsetTop;
+                window.scrollTo({ top: scrollDiv, behavior: 'smooth'});
+            }, 3000);
+
+        });
+    })
+</script>
 
 <script type="module" src="./js/main.js"></script>
 </body>
