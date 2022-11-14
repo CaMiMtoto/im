@@ -39,7 +39,7 @@
                     <li class="nav-item">
                         <a class="nav-link d-flex align-items-center gap-1 text-info text-md-white fw-bold"
                            aria-current="page"
-                           href="#">
+                           href="security_tips.html">
                             <img src="../images/otp/security.svg" alt="">
                             SECURITY TIPS
                         </a>
@@ -67,7 +67,7 @@
     <div class="container">
         <div class="row ">
             <div class="col-xl-7 pt-5 col-xxl-8 col-md-6 order-1 order-md-0">
-                <span class="display-6 text-white fw-bold">One Time Password<br> verification</span>
+                <span class="display-6 text-white ">One Time Password<br> verification</span>
                 <img src="../images/otp/Cartoon2.png" alt="Cartoon" class="img-fluid w-80 w-lg-50  my-4 d-md-block"/>
 
             </div>
@@ -77,11 +77,14 @@
                     <div class="card card-body rounded-lg  px-md-5 py-4 mt-5 ">
                         <h5 class="text-info fw-bold">OTP Verification</h5>
                         <h6 class="text-primary text-xs my-4">please enter OTP sent on email or phone to continue</h6>
-                        <form action="otp_verfication.html">
+                        <form action="otp_verfication.html" class="was-validated">
                             <div class="mb-2 position-relative">
-                                <input type="text"
-                                       class="login-form-control form-control shadow border-0  pe-4"
-                                       id="otp"/>
+                                <input type="text" id="validationPassword"
+                                       class="login-form-control form-control shadow   pe-4"
+                                        required/>
+                                <div class="invalid-feedback">
+                                    Please Enter OTP.
+                                </div>
                             </div>
                             <div class="mb-2 d-flex justify-content-end align-items-center">
 
@@ -95,6 +98,7 @@
                                 </button>
                             </div>
                         </form>
+
                     </div>
                 </div>
             </div>
@@ -112,16 +116,8 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-6 col-xl-2 col-md-4">
-                        <div class="d-flex flex-column justify-content-start align-items-start">
-                            <img src="../images/otp/bills.svg" alt="Transfer" class="feature-icon"/>
-                            <h6 class="text-white mb-3 fw-bold">Bills</h6>
-                            <p class="text-white text-xs">
-                                Easily access <br> your bills from <br> the platform
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-6 col-xl-2 col-md-5 ">
+
+                    <div class="col-6 col-xl-3 col-md-6 ">
                         <div class="d-flex flex-column justify-content-start align-items-start">
                             <img src="../images/otp/mobile_money.svg" alt="Transfer" class="feature-icon"/>
                             <h6 class="text-white mb-3 fw-bold">Mobile Money</h6>
