@@ -10862,7 +10862,6 @@ textarea.form-control-lg {
 }
 
 .login-form-control {
-  background: #FFFFFF 0 0 no-repeat padding-box !important;
   box-shadow: 0 6px 20px rgba(110, 110, 110, 0.2) !important;
   border-radius: 68px !important;
 }
@@ -11381,7 +11380,7 @@ label.error {
   font-weight: normal !important;
 }
 
-input.error, select.error, textarea.error {
+input.error:not(input[type=checkbox]), select.error, textarea.error {
   border-color: #dc3545 !important;
   box-shadow: 0 0 0 0.25rem rgba(148, 36, 36, 0.25) !important;
   padding-right: 4.125rem;
@@ -11391,7 +11390,7 @@ input.error, select.error, textarea.error {
   background-repeat: no-repeat;
 }
 
-input.valid, select.valid, textarea.valid {
+input.valid:not(input[type=checkbox]), select.valid, textarea.valid {
   border-color: #198754 !important;
   box-shadow: 0 0 0 0.25rem rgba(36, 148, 92, 0.25) !important;
   padding-right: 4.125rem;
